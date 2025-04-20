@@ -19,48 +19,36 @@
     </nav>
   </header>
 
-  <!-- Carrossel de destaque -->
-  <section class="carousel">
-    <div class="slide active">
-      <img src="assents/foto_consultorio.jpg" alt="Consultório">
-      <div class="caption">Você tem cuidado da sua saúde emocional?</div>
-    </div>
-    <div class="slide">
-      <img src="assents/foto_janela.jpg" alt="Espaço acolhedor">
-      <div class="caption">Seu bem-estar começa aqui.</div>
+  <!-- Seção inicial com frase acolhedora -->
+  <section class="intro">
+    <div class="intro-texto">
+      <h1>Bem-vinda ao seu Jardim Interior</h1>
+      <p>Um espaço para florescer, acolher suas emoções e redescobrir a leveza de ser quem você é.</p>
+      <a href="servicos.html" class="btn">Conheça os serviços</a>
     </div>
   </section>
 
-  <!-- Depoimentos -->
-  <section class="depoimentos">
-    <h2>O que dizem os pacientes</h2>
-    <div class="depoimento">
-      <p>“A Bárbara me ajudou a enxergar minha vida com mais leveza. Cada sessão foi um respiro de paz.”</p>
-      <span>– Mariana R.</span>
+  <!-- Blocos com benefícios -->
+  <section class="icones-beneficios">
+    <div class="bloco">
+      <h3>🌿 Acolhimento</h3>
+      <p>Um atendimento humano e sensível, onde sua história é ouvida com empatia.</p>
     </div>
-    <div class="depoimento">
-      <p>“Profissional incrível! Sinto que voltei a ter controle sobre minhas emoções.”</p>
-      <span>– Lucas A.</span>
+    <div class="bloco">
+      <h3>✨ Autoconhecimento</h3>
+      <p>Explore suas emoções com leveza e profundidade, respeitando seu tempo.</p>
+    </div>
+    <div class="bloco">
+      <h3>🌸 Transformação</h3>
+      <p>Construa uma nova relação com você mesma e viva com mais autenticidade.</p>
     </div>
   </section>
 
   <!-- Chamada para ação -->
-  <section class="cta">
-    <h2>Pronta para iniciar sua jornada de autoconhecimento?</h2>
-    <a href="contato.html" class="btn">Agende sua consulta</a>
+  <section class="chamada">
+    <h2>Psicologia leve, humana e com propósito</h2>
+    <p>Descubra um novo olhar sobre você mesma. A vida não precisa ser solitária ou pesada. É possível caminhar com apoio e sentido.</p>
+    <a href="contato.html" class="btn">Agende sua primeira conversa</a>
   </section>
-
-  <!-- Script básico para trocar slides -->
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    let current = 0;
-
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 5000);
-  </script>
 </body>
 </html>
-
