@@ -10,7 +10,52 @@ body {
   color: #2e2e2e;
 }
 
+/* Menu fixo */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5a3e7a;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4c2c63;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #a678d1;
+}
+
+.navbar a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #a678d1;
+}
+
+/* Espaço para compensar o menu fixo */
 .hero {
+  margin-top: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
