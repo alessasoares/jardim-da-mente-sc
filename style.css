@@ -10,7 +10,7 @@ body {
   color: #2e2e2e;
 }
 
-/* Menu fixo */
+/* === MENU FIXO === */
 .navbar {
   position: fixed;
   top: 0;
@@ -53,7 +53,7 @@ body {
   border-bottom: 2px solid #a678d1;
 }
 
-/* Espaço para compensar o menu fixo */
+/* === HERO === */
 .hero {
   margin-top: 90px;
   display: flex;
@@ -96,6 +96,7 @@ body {
   border-radius: 10px;
 }
 
+/* === MISSÃO === */
 .missao {
   background: #efe1f7;
   padding: 60px 10%;
@@ -115,6 +116,7 @@ body {
   margin: 0 auto;
 }
 
+/* === BLOCO SOBRE COM DEPOIMENTOS === */
 .sobre {
   padding: 60px 10%;
   background-color: #fff;
@@ -160,12 +162,12 @@ body {
   display: block;
 }
 
+/* === CONTATO === */
 .contato {
   background-color: #512e66;
   color: white;
   text-align: center;
   padding: 60px 10%;
-  position: relative;
 }
 
 .contato h2 {
@@ -181,6 +183,8 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* === FORMULÁRIO === */
 .contato-section {
   margin-top: 90px;
   padding: 60px 10%;
@@ -222,7 +226,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 15px;
-  font-family: inherit;
   background-color: #fff;
 }
 
@@ -246,7 +249,9 @@ body {
   border-radius: 10px;
 }
 
-.sobre-destaque {
+/* === SOBRE EM METADES === */
+.sobre-destaque,
+.sobre-metade {
   margin-top: 90px;
   padding: 60px 10%;
   display: flex;
@@ -260,6 +265,7 @@ body {
 .texto-sobre {
   flex: 1;
   max-width: 550px;
+  min-width: 300px;
 }
 
 .texto-sobre h1 {
@@ -275,13 +281,31 @@ body {
   margin-bottom: 20px;
 }
 
-.imagem-sobre img {
-  max-width: 340px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.imagem-sobre {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Galeria de fotos abaixo */
+.imagem-sobre img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: perspective(800px) rotateY(-5deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.imagem-sobre img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* === GALERIA DE FOTOS === */
 .galeria-fotos {
   display: flex;
   justify-content: center;
@@ -298,8 +322,10 @@ body {
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* === SERVIÇOS === */
 .servicos-destaque {
-  margin-top: 90px;
+  margin-top: 0;
   padding: 60px 10%;
   background-color: #f8f0f7;
   text-align: center;
@@ -316,8 +342,7 @@ body {
   color: #5f5f5f;
   margin-bottom: 40px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .cards-servicos {
@@ -349,65 +374,19 @@ body {
   line-height: 1.5;
 }
 
-/* Efeito ao passar o mouse */
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-.imagem-banner img {
-  margin-top: 90px;
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  display: block;
-}
 
-.sobre-metade {
-  margin-top: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 10%;
-  background-color: #f8f0f7;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.texto-sobre {
-  flex: 1;
-  min-width: 300px;
-  max-width: 50%;
-}
-
-.imagem-sobre {
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagem-sobre img {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  object-fit: contain;
-}
-.imagem-sobre img {
-  width: 100%;
-  max-width: 520px;      /* aumenta o tamanho da imagem */
-  height: auto;
-  object-fit: contain;
-  border-radius: 20px;   /* bordas suaves */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* sombra 3D leve */
-  transform: perspective(800px) rotateY(-5deg); /* leve efeito 3D */
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
+/* === BANNER COM IMAGEM E FRASE === */
 .banner {
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 100vh;
   overflow: hidden;
+  margin-top: 0;
+  padding: 0;
 }
 
 .banner img {
@@ -415,7 +394,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(0.75); /* escurece levemente para destacar o texto */
+  filter: brightness(0.75);
 }
 
 .banner-frase {
@@ -424,15 +403,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 32px;
+  font-size: 36px;
   text-align: center;
   font-weight: 600;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   max-width: 90%;
-}
-
-
-.imagem-sobre img:hover {
-  transform: perspective(800px) rotateY(0deg) scale(1.03);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
 }
