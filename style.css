@@ -393,3 +393,18 @@ body {
   height: auto;
   object-fit: contain;
 }
+.imagem-sobre img {
+  width: 100%;
+  max-width: 520px;      /* aumenta o tamanho da imagem */
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;   /* bordas suaves */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* sombra 3D leve */
+  transform: perspective(800px) rotateY(-5deg); /* leve efeito 3D */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.imagem-sobre img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
