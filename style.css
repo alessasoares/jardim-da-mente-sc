@@ -475,3 +475,112 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+/* === NOVA INTRO === */
+.intro {
+  margin-top: 90px;
+  background: linear-gradient(to right, #f8f0f7, #efe1f7);
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.intro-texto h1 {
+  font-size: 38px;
+  color: #4c2c63;
+  margin-bottom: 20px;
+}
+
+.intro-texto p {
+  font-size: 18px;
+  color: #5f5f5f;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.intro-texto .btn {
+  background-color: #a678d1;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.intro-texto .btn:hover {
+  background-color: #8c58c3;
+}
+
+/* === ÍCONES COM BENEFÍCIOS === */
+.icones-beneficios {
+  background-color: #fff;
+  padding: 80px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: center;
+}
+
+.icones-beneficios .bloco {
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  background-color: #f9f5fc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icones-beneficios .bloco:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.icones-beneficios .bloco h3 {
+  font-size: 20px;
+  color: #6d4b93;
+  margin-bottom: 12px;
+}
+
+.icones-beneficios .bloco p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* === CHAMADA FINAL === */
+.chamada {
+  background-color: #512e66;
+  color: white;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.chamada h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.chamada p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.chamada .btn {
+  background-color: #caa7e2;
+  color: #512e66;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.chamada .btn:hover {
+  background-color: #e2c4f4;
+}
