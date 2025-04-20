@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Psicóloga Bárbara Cardoso</title>
+  <title>Início - Jardim da Mente</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Menu fixo -->
   <header class="navbar">
     <div class="logo">Jardim da Mente</div>
     <nav>
@@ -20,45 +19,48 @@
     </nav>
   </header>
 
-  <!-- Hero section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Psicóloga<br>Bárbara Cardoso</h1>
-      <p>Cuide de sua saúde mental<br>com empatia e profissionalismo.</p>
-      <a href="servicos.html" class="btn">Conheça os serviços</a>
+  <!-- Carrossel de destaque -->
+  <section class="carousel">
+    <div class="slide active">
+      <img src="assents/foto_consultorio.jpg" alt="Consultório">
+      <div class="caption">Você tem cuidado da sua saúde emocional?</div>
     </div>
-    <div class="hero-img">
-      <img src="assents/foto_consultorio.jpg" alt="Psicóloga Bárbara Cardoso">
-    </div>
-  </section>
-
-  <!-- Missão -->
-  <section class="missao">
-    <h2>Missão e abordagem</h2>
-    <p>Geranciadaa em psicologia, enterado com dalujzeane, fim sobre contecimento e pregotuam para promaver o crescimento emocional.</p>
-  </section>
-
-  <!-- Sobre -->
-  <section class="sobre">
-    <h2>Quem é Bárbara Cardoso</h2>
-    <p>Candidata em psicologia, inclui a abordagem cognitivo comoluta.<br>Trabalha com adultos e adolescentes, em cido bisconte.</p>
-    
-    <div class="depoimentos">
-      <div class="depoimento">
-        <p>“A Bárbara me ajudou a enxergar minha vida com mais leveza. Cada sessão foi um respiro de paz.”</p>
-        <span>Mariana R., 29 anos</span>
-      </div>
-      <div class="depoimento">
-        <p>“Profissional incrível! Sinto que voltei a ter controle sobre minhas emoções.”</p>
-        <span>Lucas A., 55 anos</span>
-      </div>
+    <div class="slide">
+      <img src="assents/foto_janela.jpg" alt="Espaço acolhedor">
+      <div class="caption">Seu bem-estar começa aqui.</div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section class="contato">
+  <!-- Depoimentos -->
+  <section class="depoimentos">
     <h2>O que dizem os pacientes</h2>
-    <a href="contato.html" class="btn">Entre em contato</a>
+    <div class="depoimento">
+      <p>“A Bárbara me ajudou a enxergar minha vida com mais leveza. Cada sessão foi um respiro de paz.”</p>
+      <span>– Mariana R.</span>
+    </div>
+    <div class="depoimento">
+      <p>“Profissional incrível! Sinto que voltei a ter controle sobre minhas emoções.”</p>
+      <span>– Lucas A.</span>
+    </div>
   </section>
+
+  <!-- Chamada para ação -->
+  <section class="cta">
+    <h2>Pronta para iniciar sua jornada de autoconhecimento?</h2>
+    <a href="contato.html" class="btn">Agende sua consulta</a>
+  </section>
+
+  <!-- Script básico para trocar slides -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 5000);
+  </script>
 </body>
 </html>
+
