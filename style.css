@@ -362,3 +362,34 @@ body {
   display: block;
 }
 
+.sobre-metade {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #f8f0f7;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.texto-sobre {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.imagem-sobre {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-sobre img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: contain;
+}
