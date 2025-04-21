@@ -29,12 +29,15 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #5a3e7a;
+  margin-right: 10px;
 }
 
 .navbar ul {
+  padding-top: 3px;
   list-style: none;
   display: flex;
   gap: 25px;
+ 
 }
 
 .navbar a {
