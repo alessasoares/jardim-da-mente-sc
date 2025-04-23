@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre - Bárbara Cardoso</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-  crossorigin="anonymous"></script>
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="./images/icons/psychology_icon.png">
 
 </head>
+
 <body>
   <div id="navbar-container"></div>
   <script>
-      fetch('navbar.html')
-          .then(res => res.text())
-          .then(data => {
-              document.getElementById('navbar-container').innerHTML = data;
-          });
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
   </script>
 
   <section class="sobre-metade">
     <div class="texto-sobre">
       <h1>Sobre Bárbara Cardoso</h1>
-      <p>Bárbara Cardoso é psicóloga clínica (CRP 12/20508) apaixonada por tornar a psicologia uma experiência divertida e acolhedora. Com formação em Terapia Cognitivo-Comportamental (TCC) e especialização em Terapia Baseada em Processos, ela utiliza elementos da neurociência para promover o bem-estar emocional de seus pacientes.</p>
-      <p>Atua principalmente no atendimento de casos relacionados à ansiedade, depressão, bipolaridade e transtorno de personalidade borderline. Seu diferencial está na abordagem leve e humanizada, inspirada no universo do filme "Divertida Mente", tornando-se conhecida como "a melhor amiga dos Divertidamente".</p>
-      <p>Além do atendimento clínico, Bárbara compartilha conteúdos sobre saúde mental em suas redes sociais, buscando aproximar a psicologia do cotidiano das pessoas. Seu consultório, o Jardim da Mente Psicologia, é um espaço acolhedor onde cada paciente é convidado a florescer em seu próprio tempo.</p>
+      <p>Bárbara Cardoso é psicóloga clínica (CRP 12/20508) apaixonada por tornar a psicologia uma experiência divertida
+        e acolhedora. Com formação em Terapia Cognitivo-Comportamental (TCC) e especialização em Terapia Baseada em
+        Processos, ela utiliza elementos da neurociência para promover o bem-estar emocional de seus pacientes.</p>
+      <p>Atua principalmente no atendimento de casos relacionados à ansiedade, depressão, bipolaridade e transtorno de
+        personalidade borderline. Seu diferencial está na abordagem leve e humanizada, inspirada no universo do filme
+        "Divertida Mente", tornando-se conhecida como "a melhor amiga dos Divertidamente".</p>
+      <p>Além do atendimento clínico, Bárbara compartilha conteúdos sobre saúde mental em suas redes sociais, buscando
+        aproximar a psicologia do cotidiano das pessoas. Seu consultório, o Jardim da Mente Psicologia, é um espaço
+        acolhedor onde cada paciente é convidado a florescer em seu próprio tempo.</p>
     </div>
     <div class="imagem-sobre">
-      <img src="assents/divertidamentes.png" alt="Divertidamente" />
+      <img src="assets/divertidamentes.png" alt="Divertidamente" />
     </div>
   </section>
 
   <section class="galeria-fotos">
-    <img src="assents/foto_janela.jpg" alt="Bárbara próxima à janela">
-    <img src="assents/foto_consultorio.jpg" alt="Consultório Bárbara Cardoso">
-    <img src="assents/foto_perfil.jpg" alt="Bárbara Cardoso">
+    <img src="assets/foto_janela.jpg" alt="Bárbara próxima à janela">
+    <img src="assets/foto_consultorio.jpg" alt="Consultório Bárbara Cardoso">
+    <img src="assets/foto_perfil.jpg" alt="Bárbara Cardoso">
   </section>
 </body>
+
 </html>
